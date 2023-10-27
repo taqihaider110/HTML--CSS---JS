@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    margin-right: 20px;
+}
+
+form div {
+    margin: 10px 0;
+}
+
+.file-drop-container {
+    text-align: center;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.drop-area {
+    height: 150px;
+    line-height: 150px;
+}
+
+#fileContent {
+    font-weight: bold;
+}
