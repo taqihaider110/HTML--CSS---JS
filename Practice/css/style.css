@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+}
+
+p {
+    color: gray;
+}
+
+.content {
+    color: rgb(139, 234, 91);
+}
+
+#article1 {
+    color : salmon;
+}
+
+#second {
+    font-style: italic;
+}
+
+h1 , h2 {
+    color : rgb(139, 234, 91);
+}
+
+#highlight {
+    background-color: lightblue;
+    text-transform: uppercase;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
