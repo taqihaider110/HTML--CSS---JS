@@ -1,0 +1,27 @@
+h1, h2 {
+    color: blue;
+    font-size: 36px;
+    text-align: center;
+    margin: auto;
+}
+
+* {
+    margin: auto;
+    font-size: large;
+}
+
+#increment {
+    text-align: center;
+    margin: auto;
+}
+
+button{
+    font-size: 18px;
+    padding: 10px;
+    color: lightgreen;
+    background-color: darkblue;
+    border-radius: 24px;
+    border: 2px solid lightgreen;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px grey;
+}
