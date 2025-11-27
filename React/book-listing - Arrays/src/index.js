@@ -3,66 +3,25 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import img2 from "./images/Goku.jpeg";
 
-const firstBook = {
-  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhGeDd0pCpEpBTWxjcXymXZY8uGUX86GQWg&s",
-  title: "One Man Army",
-  author: "Hekiuro Tsuruta",
-};
-
-const secondBook = {
-  img: img2,
-  title: " Dragon ball",
-  author: " Akira Toriyama",
-};
+const book = [
+  {
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhGeDd0pCpEpBTWxjcXymXZY8uGUX86GQWg&s",
+    title: "One Man Army",
+    author: "Hekiuro Tsuruta",
+  },
+  {
+    img: img2,
+    title: " Dragon ball",
+    author: " Akira Toriyama",
+  },
+];
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book
-        title={firstBook.title}
-        author={firstBook.author}
-        img={firstBook.img}
-      />
-      <Book
-        title={secondBook.title}
-        author={secondBook.author}
-        img={secondBook.img}
-      />
-      <Book
-        title={firstBook.title}
-        author={firstBook.author}
-        img={firstBook.img}
-      />
-      <Book
-        title={secondBook.title}
-        author={secondBook.author}
-        img={secondBook.img}
-      />
-      <Book
-        title={secondBook.title}
-        author={secondBook.author}
-        img={secondBook.img}
-      />
-      <Book
-        title={firstBook.title}
-        author={firstBook.author}
-        img={firstBook.img}
-      />
-      <Book
-        title={firstBook.title}
-        author={firstBook.author}
-        img={firstBook.img}
-      />
-      <Book
-        title={secondBook.title}
-        author={secondBook.author}
-        img={secondBook.img}
-      />
-      <Book
-        title={secondBook.title}
-        author={secondBook.author}
-        img={secondBook.img}
-      />
+      {book.map((book, index) => {
+        return <Book key={index} {...book} />;
+      })}
     </section>
   );
 };
@@ -70,9 +29,6 @@ const BookList = () => {
 const Book = (props) => {
   return (
     <article className="book">
-      {/* <Image />
-      <Author />
-      <Title /> */}
       <h1>{props.title}</h1>
       <h3>{props.author}</h3>
       <img src={props.img} alt={props.title} />
